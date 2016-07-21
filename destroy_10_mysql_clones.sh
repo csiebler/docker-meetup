@@ -12,5 +12,5 @@ for i in `seq 1 10`; do
  # Stop container, remove it and delete its Docker Volume
   docker stop $CONTAINER_NAME
   docker rm $CONTAINER_NAME
-  docker volume rm $VOLUME_NAME
+  docker volume rm $VOLUME_NAME &
 done    
